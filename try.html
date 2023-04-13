@@ -5,36 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        .sec1 {
-        background-image:linear-gradient(to right, #4A0F2A, #701E12 , #4B064C);
-        background-size: cover;
-        width: 200px;
-        height: 200px;
-        }
-        
+    .wrapper {
+  /* Equal width and height create a perfect square */
+  width: 300px;
+  height: 300px;
+  /* Adding a border-radius of 1/2 width or height (same value) */
+  /* turns that square into a circle */
+  border-radius: 150px;
+  /* Apply your box-shadow styles, which inherit the round .wrapper shape */
+ /* box-shadow: 0px 0px 200px #444444;*/
+ box-shadow:  10px 10px  300px #b218c7,  0px 0px 200px #340B6B,  0px 0px 200px #174ACF;
+}
+
+.content {
+  /* Apply .content styles as needed; */
+  /* will display on top of the round shadow */
+  background-color: yellow;
+}
+
     </style>
+      
+      
+      
 </head>
 <body>
- <section>
-    <div class="sec1">
-        <div class="div1">
-
-        </div>
-        <div class="div2">
-
-        </div>
-        <div class="div3">
-
-        </div>
-        <div class="div4">
-
-        </div>
-    </div>
- </section>
+    <div class="wrapper">
+        <div class="content">Content Here</div>
+      </div>
 </body>
 </html>
-
-
-style=" background-image:linear-gradient(to right, #4A0F2A, #701E12 , #4B064C);

@@ -39,6 +39,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <title>HacK'23</title>
+
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -109,12 +110,10 @@
     <!--==================== MAIN ====================-->
     <main
       class="main"
-      style="background-color: #181921;"
     >
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
-        <div >
-
+        <div>
           <div id="div1">
             <div class="hack23">
               <h1 style="text-align: center; font-size: 150px;">HACK'23</h1>
@@ -129,19 +128,19 @@
           </div>
         </div>
 
-        <img src="assets/img/round.png" alt="home leaf" class="home__leaf-1" />
-        <img src="assets/img/round2.png" alt="home leaf" class="home__leaf-2" />
+       <!-- <img src="assets/img/round.png" alt="home leaf" class="home__leaf-1" />
+        <img src="assets/img/round2.png" alt="home leaf" class="home__leaf-2" />-->
       </section>
 
       <!--==================== ABOUT ====================-->
       
       <br><br><br><br><br><br>
-      <section class="newsletter section" id="about">
-        
-        <div class="newsletter__container container" style="opacity: 500;">
+      <section class="newsletter section" id="about" style="background-image: url('assets/img/gradient.png'); background-repeat: no-repeat;">
+  
+        <div class="newsletter__container container">
           <div class="newsletter__content grid">
             
-             <lottie-player  class="newsletter__img" src="https://assets6.lottiefiles.com/packages/lf20_msuy8hr9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>
+             <lottie-player  class="newsletter__img" src="https://assets6.lottiefiles.com/packages/lf20_msuy8hr9.json"  background="transparent"  speed="1"  style="width: 300px; height: 350px;"  loop autoplay></lottie-player>
             <div class="newsletter__data">
               <span class="section__subtitle"> </span>
               <h2 class="section__title">KAPRICIOUS'23 <br /></h2>
@@ -158,12 +157,12 @@
               </div>
             </div>
           </div>
-
+          <!--
           <img
             src="assets/img/manycircle.png"
             alt="newsletter__img"
             class="newsletter__spinach"
-          />
+          />-->
         </div>
        <!-- <br><br><br><br><br><br><br><br><br>-->
        
@@ -180,7 +179,7 @@
               src="assets/img/Conversion rate optimization-amico.png"
               alt="popular image"
               class="popular__img"
-              style="padding: 20px"
+          
             />
 
             <h3 class="popular name">Block Chain</h3>
@@ -193,10 +192,12 @@
           </article>
 
           <article class="popular__card">
-            <img
+            <img 
               src="assets/img/image.png"
               alt="popular image"
               class="popular__img"
+        
+              
             />
 
             <h3 class="popular name">Agro-tech</h3>
@@ -213,6 +214,7 @@
               src="assets/img/Farmers market-rafiki.png"
               alt="popular image"
               class="popular__img"
+             
             />
 
             <h3 class="popular name">Medi-Tech</h3>
@@ -228,43 +230,28 @@
 
       <!--Prizes-->
 
-      <div
-        class="outer-containerprize"
-        style="margin-bottom: 500px " 
-        id="prizes"
-      >
-        <h2 class="section__title">Prizes</h2>
-        <div class="containerprize container1prize">
-          <div class="inner_containerprize">
-            <div class="title">Individual</div>
-            <div class="main_number">2</div>
-            <div class="containerprize_text">
-              <div class="containerprize_text1">Simple</div>
-              <div class="containerprize_text2">20 gb</div>
-            </div>
-          </div>
+      <div class="slider">
+        <input type="radio" name="testimonial" id="t-1">
+        <input type="radio" name="testimonial" id="t-2" checked>
+        <input type="radio" name="testimonial" id="t-3">
+        <div class="testimonials">
+            <label class="item" for="t-1" style="background-color: blue; height: 500px;">
+				<h1>card 1</h1>
+            </label>
+            <label class="item" for="t-2" style="background-color: red; height: 500px;">
+                <h1>card 2</h2>
+            </label>
+            <label class="item" for="t-3" style="background-color: yellow; height: 500px;">
+                <h1>card 3</h2>
+            </label>
         </div>
-        <div class="containerprize container2prize activeprize">
-          <div class="inner_containerprize">
-            <div class="title">Shared</div>
-            <div class="main_number">6</div>
-            <div class="containerprize_text">
-              <div class="containerprize_text1">Family</div>
-              <div class="containerprize_text2">100 gb</div>
-            </div>
-          </div>
+        <br/>
+        <div class="dots">
+            <label for="t-1"></label>
+            <label for="t-2"></label>
+            <label for="t-3"></label>
         </div>
-        <div class="containerprize container3prize">
-          <div class="inner_containerprize">
-            <div class="title">Group</div>
-            <div class="main_number">9</div>
-            <div class="containerprize_text">
-              <div class="containerprize_text1">Business</div>
-              <div class="containerprize_text2">500 gb</div>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
 
       <!--TIMELINE-->
       <section class="intro" id="timeline">
@@ -275,87 +262,27 @@
         <ul>
           <li>
             <div>
-              <time>1934</time> At vero eos et accusamus et iusto odio
-              dignissimos ducimus qui blanditiis praesentium At vero eos et
-              accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium
+              <time>10th April</time> Registartion Begins
             </div>
           </li>
           <li>
             <div>
-              <time>1937</time> Proin quam velit, efficitur vel neque vitae,
-              rhoncus commodo mi. Suspendisse finibus mauris et bibendum
-              molestie. Aenean ex augue, varius et pulvinar in, pretium non
-              nisi.
+              <time>20th  April</time> Registration Closes
             </div>
           </li>
           <li>
             <div>
-              <time>1940</time> Proin iaculis, nibh eget efficitur varius,
-              libero tellus porta dolor, at pulvinar tortor ex eget ligula.
-              Integer eu dapibus arcu, sit amet sollicitudin eros.
+              <time>28th  April</time> Opening Ceremony
             </div>
           </li>
           <li>
             <div>
-              <time>1943</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
+              <time>29th  April</time> Hackathon Concludes
             </div>
           </li>
           <li>
             <div>
-              <time>1946</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1956</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1957</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut
-              mauris felis, volutpat eget porta faucibus, euismod quis ante.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1977</time> Vestibulum porttitor lorem sed pharetra
-              dignissim. Nulla maximus, dui a tristique iaculis, quam dolor
-              convallis enim, non dignissim ligula ipsum a turpis.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>1985</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2000</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>2005</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
+              <time>29th  April</time> Results Announcement
             </div>
           </li>
         </ul>
@@ -647,106 +574,75 @@
     </main>
 
     <!--==================== FOOTER ====================-->
+
     <footer
-      id="footer"
-      style="
-        background-image: url('assets/img/2.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-      "
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="address">
-              <h2 style="color: white; padding-top: 50px">Address</h2>
-              <img
-                src="./assets/images/about/home_line.png"
-                alt=""
-                class="img-fluid"
-              />
-              <div class="address-links">
-                <li class="address1">
-                  <i class="fa-solid fa-location-dot"></i> Kolathur ramankulam-
-                  <br />
-                  lengthy addess
-                </li>
-                <li>
-                  <a href=""><i class="fa-solid fa-phone"></i> +9190904</a>
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-solid fa-envelope"></i> mail@1234567.com</a
-                  >
-                </li>
-              </div>
+    id="footer"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="address">
+            <h2 style="color: white; padding-top: 50px">Address</h2>
+            <img
+              src="./assets/images/about/home_line.png"
+              alt=""
+              class="img-fluid"
+            />
+            <div class="address-links">
+              <li class="address1">
+                <i class="fa-solid fa-location-dot"></i> KMEA Engineering College 
+                <br />
+                Edathala, Aluva ,Ernakulam
+                <br/>
+                683561, Kerala, India.
+              </li>
+             <!--<li>
+                <a href=""><i class="fa-solid fa-phone"></i> +9190904</a>
+              </li>-->
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-envelope"></i> mail@1234567.com</a
+                >
+              </li> 
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="useful-link">
-              <h2 style="color: white; padding-top: 50px">Useful Links</h2>
-              <img
-                src="./assets/images/about/home_line.png"
-                alt=""
-                class="img-fluid"
-              />
-              <div class="use-links">
-                <li>
-                  <a href="index.html"
-                    ><i class="fa-solid fa-angles-right"></i> Home</a
-                  >
-                </li>
-                <li>
-                  <a href="about.html"
-                    ><i class="fa-solid fa-angles-right"></i> About</a
-                  >
-                </li>
-                <li>
-                  <a href="gallery.html"
-                    ><i class="fa-solid fa-angles-right"></i> Faq's</a
-                  >
-                </li>
-                <li>
-                  <a href="contact.html"
-                    ><i class="fa-solid fa-angles-right"></i> Contact</a
-                  >
-                </li>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="social-links">
-              <h2 style="color: white; padding-top: 50px">Follow Us</h2>
-              <img src="./assets/images/about/home_line.png" alt="" />
-              <div class="social-icons">
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-facebook-f"></i> Facebook</a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-instagram"></i> Instagram</a
-                  >
-                </li>
-                <li>
-                  <a href=""
-                    ><i class="fa-brands fa-linkedin-in"></i> Linkedin</a
-                  >
-                </li>
-              </div>
+        </div>
+       
+
+        <div class="col-md-3">
+          <div class="social-links">
+            <h2 style="color: white; padding-top: 50px">Follow Us</h2>
+            <img src="./assets/images/about/home_line.png" alt="" />
+            <div class="social-icons">
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-facebook-f"></i>Kapricious'23</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands fa-linkedin-in"></i> Linkedin</a
+                >
+              </li>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+    
+    
     <!-- footer section end -->
     <!-- footer copy right section start -->
     <section id="copy-right">
       <div class="copy-right-sec">
         <i class="fa-solid fa-copyright"></i> <a></a>
-        <a href="#">HacK'23 & KAPRICIOUS'23</a>
+        <a href="#">Hac'K23 </a>
       </div>
     </section>
     <!-- footer copy right section end -->

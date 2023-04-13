@@ -1,44 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-<section class="home section" id="home">
-  <div>
-    <div id="div1">
-      <div class="hack23">
-        <h1 style="text-align: center; font-size: 150px;">HACK'23</h1>
-      </div>
-    </div>
-    <div id="div2">
-      <img style="width: 80%; height: 80%; padding: 70px;"
-        src="Group 18.png"
-        alt="placeholder image"
-      />
+<html>
+<head>
+<style> 
+.div2 {
+  position: relative;
+  z-index: 2;
+  animation: zoom-down 3s ease-out forwards;
+  transform-origin: top center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  
+}
+
+@keyframes zoom-down {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: translateY(40%);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="div2">
+  Hwello
+</div>
+
+<div></div>
+
+</body>
+</html>
+
+
+useful links 
+<div class="col-md-3">
+  <div class="useful-link">
+    <h2 style="color: white; padding-top: 50px">Useful Links</h2>
+    <img
+      src="./assets/images/about/home_line.png"
+      alt=""
+      class="img-fluid"
+    />
+    <div class="use-links">
+      <li>
+        <a href="index.html"
+          ><i class="fa-solid fa-angles-right"></i>Register</a
+        >
+      </li>
+      <li>
+        <a href="about.html"
+          ><i class="fa-solid fa-angles-right"></i>Faq's</a
+        >
+      </li>
+      <li>
+        <a href="gallery.html"
+          ><i class="fa-solid fa-angles-right"></i>Home</a
+        >
+      </li>
+      <li>
+        <a href="contact.html"
+          ><i class="fa-solid fa-angles-right"></i>Timeline</a
+        >
+      </li>
     </div>
   </div>
-
-  <img src="assets/img/round.png" alt="home leaf" class="home__leaf-1" />
-  <img src="assets/img/round2.png" alt="home leaf" class="home__leaf-2" />
-
-  <style>
-    @media (max-width: 767px) {
-      /* Adjust styles for smaller screens */
-      h1 {
-        font-size: 80px;
-      }
-      img {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-      }
-    }
-  </style>
-</section>
-
-  </body>
-</html>
+</div>
