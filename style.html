@@ -1,40 +1,69 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .element {
-  background: 
-    radial-gradient(
-      circle at top left,
-      rgba(255, 255, 255, 0.5), 
-      transparent 100px
-    ),
-    radial-gradient(
-      circle at top right,
-      rgba(255, 255, 255, 0.5), 
-      transparent 100px
-    ),
-    radial-gradient(
-      at bottom left,
-      rgba(255, 0, 255, 0.5), 
-      transparent 400px
-    ),
-    radial-gradient(
-      at bottom right,
-      rgba(255, 100, 100, 0.5), 
-      transparent 400px
-    );
+	<title>Curved Image</title>
+	<style>
+		body {
+  margin-left: 1200px;
+  height: 700vh;
 }
-    </style>
+
+#image {
+position: fixed;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-play-state: paused;
+animation-iteration-count: 1;
+animation-fill-mode: both;
+animation-name: move;
+animation-delay: calc(var(--epoch) * -1s);
+}
+
+@-webkit-keyframes move {
+
+0% {
+ transform: translateY(0);
+}
+100% {
+ transform: translateY(var(--maximum));
+}
+}
+
+@keyframes move {
+
+0% {
+ transform: translateY(0);
+}
+100% {
+ transform: translateY(var(--maximum));
+}
+}
+	</style>
 </head>
 <body>
-    <div class="element">
-        hello
-    </div>
+	<img id="image" style="height: 140px; width: 100px;" src="assets/img/circle.png" alt="">
+	<script>
+    let aim = document.getElementById('image'), room, overflow;
+
+window.addEventListener('load', setEdge);
+window.addEventListener('resize', setEdge);
+
+window.addEventListener('scroll', function() {
+
+  let ratio = (this.pageYOffset || this.scrollY)/overflow;
+
+  aim.style.setProperty('--epoch', ratio);
+});
+
+function setEdge() {
+
+  room = window.innerHeight;
+  overflow = document.body.scrollHeight-room;
+
+  aim.style.setProperty('--maximum', room-aim.height + 'px');
+}
+
+
+  </script>
 </body>
 </html>
