@@ -2151,7 +2151,6 @@ align-items: center;
     margin: 45px;
 
   }
-<<<<<<< HEAD
 
 }
 
@@ -2323,7 +2322,6 @@ animation-delay: calc(var(--epoch) * -1s);
 100% {
  transform: translateY(var(--maximum));
 }
-=======
 }
 
 #preloader {
@@ -2381,5 +2379,4 @@ animation-delay: calc(var(--epoch) * -1s);
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
 	}
->>>>>>> bc11a7290acb037840afa8ef0eeb8896f089b266
 }
