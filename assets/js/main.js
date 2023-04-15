@@ -194,3 +194,34 @@ jQuery(document).ready(function($){
 
 
 
+/*countdown*/
+// Set the date and time to count down to
+var countDownDate = new Date("2023-04-28T00:00:00Z").getTime();
+
+// Update the countdown every second
+var x = setInterval(function() {
+
+  // Get the current date and time
+  var now = new Date().getTime();
+
+  // Calculate the remaining time in milliseconds
+  var distance = countDownDate - now;
+
+  // Calculate the remaining time in days, hours, minutes, and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Update the HTML with the remaining time
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("seconds").innerHTML = seconds;
+
+  // If the countdown is over, display a message
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);

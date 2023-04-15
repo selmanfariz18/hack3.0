@@ -2316,3 +2316,65 @@ body {
   margin: 0 auto;
   transition: transform 0.4s;
 }
+
+
+
+/* Countdown wrapper */
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Countdown boxes */
+.countdown-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: countdown-box-anim 1s ease-in-out alternate infinite;
+  box-shadow: 0px 3.89851px 30px rgba(0, 0, 0, 0.17), 0px 11.1386px 71.2871px rgba(30, 40, 146, 0.7);
+}
+
+/* Countdown values */
+.countdown-value {
+  font-size: 40px;
+  font-weight:bolder;
+  color:#000212;
+}
+
+/* Countdown labels */
+.countdown-label {
+  font-size: 20px;
+  color: #999;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 767px) {
+  .countdown-box{
+    width: 85px;
+    height: 85px;
+    margin: 3px;
+    padding: 10px;
+  }
+
+  .countdown-value {
+    font-size: 20px;
+    font-weight: bold;
+    color:#000212;
+  }
+
+  .countdown-label {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+  }
+}
