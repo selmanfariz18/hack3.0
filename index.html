@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/3.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/img/icon-arrow-down.svg" type="image/x-icon" />
     <!--=============== REMIXICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
@@ -35,20 +35,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>HacK'23</title>
+    <link rel="stylesheet" href="assets/css/sponser.css"/>
+    <title>Hac'K_23</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
   </head>
   <body>
     <!--==================== HEADER ====================-->
+
+
     <header class="header" id="header">
       <nav class="nav container">
         <a href="" class="nav__logo">
-          <img src="assets/img/logo.png" alt="logo image" />
-          HacK'23
+          <img src="assets/img/icon-arrow-down.svg" alt="logo image" />
+          Hac'K_23
         </a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
@@ -75,21 +76,17 @@
               <a href="#faq" class="nav__link">Faq</a>
             </li>
             <li class="nav__item">
-              <a href="#organiser" class="nav__link">Organisers</a>
+              <a href="#organisers" class="nav__link">Organisers</a>
             </li>
           </ul>
-
           <!-- Close Button -->
           <div class="nav__close" id="nav-close">
             <i class="ri-close-line"></i>
           </div>
-
         </div>
-
         <div class="nav__buttons">
           <!-- Transition .-->
           <i class="" id="theme-button"></i>
-
           <!-- Toggle button -->
           <div class="nav__toggle" id="nav-toggle">
             <i class="ri-apps-2-line"></i>
@@ -97,26 +94,24 @@
         </div>
       </nav>
     </header>
-    <img id="image"  class="image" style="height: 100px; width: 60px;" src="assets/img/redbull.png" alt="">
+
+
+    
     <!--==================== MAIN ====================-->
     <main
       class="main"
     >
       <!--==================== HOME ====================-->
       <section class="home section" id="home" style="background-image: linear-gradient(#0c1038b2, #000212);">
-        <div class="container">
+        <div class="container " style="margin-top: 50px;">
           <img src="hac'k2023.gif"/>
         </div>
-
-       <!-- <img src="assets/img/round.png" alt="home leaf" class="home__leaf-1" />
-        <img src="assets/img/round2.png" alt="home leaf" class="home__leaf-2" />-->
       </section>
 
       <!--==================== ABOUT ====================-->
-      
+      <img id="image"  class="image" style="height: 100px; width: 60px;" src="assets/img/redbull.png" alt="">
       <br><br><br><br><br><br>
       <section class="newsletter section" id="about" style="background: linear-gradient(to bottom, #000212, #0c0c23, #000212);background-repeat: no-repeat;">
-  
         <div class="newsletter__container container">
           <div class="newsletter__content grid">            
              <lottie-player  class="newsletter__img" src="https://assets6.lottiefiles.com/packages/lf20_msuy8hr9.json"  background="transparent"  speed="1"  style="width: 300px; height: 350px;"  loop autoplay></lottie-player>
@@ -133,83 +128,62 @@
               </div>    
             </div>
           </div>
-          <!--
-          <img
-            src="assets/img/manycircle.png"
-            alt="newsletter__img"
-            class="newsletter__spinach"
-          />-->
         </div>
-       <!-- <br><br><br><br><br><br><br><br><br>-->
-       
       </section>
-
       <img src="assets/img/Mask group.png" style=" background-repeat: no-repeat;">
 
       <!--==================== VERTICES ====================-->
       <section class="popular section" id="vertices">
-        <span class="section__subtitle"> </span>
         <h2 class="section__title">Our Vertices</h2>
-
         <div class="popular__container container grid">
-          <article class="popular__card">
+          <article class="popular__card" >
             <img
               src="assets/img/blockchain.png"
               alt="popular image"
               class="popular__img"
           
             />
-
             <h3 class="popular name">Block Chain</h3>
             <span class="popular__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Blockchain is a distributed ledger technology that allows for secure, transparent, and tamper-proof transactions and data storage across a network of computers.
             </span>
           </article>
-
           <article class="popular__card">
             <img 
               src="assets/img/agro.png"
               alt="popular image"
               class="popular__img"
-        
-              
             />
-
             <h3 class="popular name">Agro-tech</h3>
             <span class="popular__description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              Agro tech refers to the use of technology in agriculture to improve efficiency, sustainability, and profitability and to maintaine a sustainable future.
             </span>
           </article>
-
           <article class="popular__card">
             <img
               style="width: 195px; height: 195px;"
               src="assets/img/medi tech.png"
               alt="popular image"
               class="popular__img"
-             
             />
-
             <h3 class="popular name">Medi-Tech</h3>
             <span class="popular__description"
-              >Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. </span
+              >Medi tech, or medical technology, involves the use of technology to improve healthcare outcomes, including diagnosis, treatment, and patient care.</span
             >
           </article>
         </div>
       </section>
 
       <!--Prizes-->
-
-      <div class="slider" id="prizes">
+      <section id="prizes">
+      <div class="slider">
+        <h2 class="section__title">Exciting prize pool !!</h2>
         <input type="radio" name="testimonial" id="t-1">
         <input type="radio" name="testimonial" id="t-2" checked>
         <input type="radio" name="testimonial" id="t-3">
         <div class="testimonials">
             <label class="item" for="t-1" style="background-color: blue; height: 500px;">
-				<h1>card 1</h1>
+				    <h1>card 1</h1>
             </label>
             <label class="item" for="t-2" style="background-color: red; height: 500px;">
                 <h1>card 2</h2>
@@ -219,13 +193,13 @@
             </label>
         </div>
         <br/>
-    </div>
+      </div>
+      </section>
 
       <!--TIMELINE-->
       <section class="intro" id="timeline">
         <h2 class="section__title">Timeline</h2>
       </section>
-
       <section class="timeline">
         <ul>
           <li>
@@ -267,7 +241,6 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
-
         <div class="faq">
           <h3 class="faq-title">Who can participate?</h3>
           <p class="faq-text">Hac'K_23 is open for students all over India .  </p>
@@ -276,7 +249,6 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
-
         <div class="faq">
           <h3 class="faq-title">
             What's the team size?
@@ -287,7 +259,6 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
-
         <div class="faq">
           <h3 class="faq-title">
             How can I register for Hac'K_23 hackathon?
@@ -298,7 +269,6 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
-
         <div class="faq">
           <h3 class="faq-title">
             Is there any registration fee for participating in Hac'k_23 ?
@@ -309,7 +279,6 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
-
         <div class="faq">
           <h3 class="faq-title">
             What kind of projects can I work on at Hac'k_23?
@@ -320,7 +289,6 @@
             <i class="fas fa-times"></i>
           </button>
         </div>
-
         <div class="faq">
           <h3 class="faq-title">
             What if I don't know coding ?
@@ -333,42 +301,46 @@
         </div>
       </div>
 
-      <!--Core Team  Start 
+      <!--Staff coordinators-->
+  <section>
+  <h2 class="section__title" style="margin: 80px;">Staff Coordinators</h2>
+  <div class="staff">
+    <div class="staff-card">
+      <div class="staff-card-top">
+        <div class="staff-card-image" style="margin-left: 20px; margin-top: 20px;">
+          <img src="assets/img/Amal M. R..jpeg" alt="">
+        </div>
+      </div>
+      <div class="staff-card-bottom">
+        <div class="staff-card-name">
+          Amal M R
+        </div>
+        <div class="staff-card-position">
+          Position
+        </div>
+      </div>
+    </div>
+      <div class="staff-card">
+      <div class="staff-card-top">
+        <div class="staff-card-image" style="margin-left: 20px; margin-top: 20px;">
+          <img src="assets/img/Fasalul Faseeh.jpg" alt="">
+        </div>
+      </div>
+      <div class="staff-card-bottom">
+        <div class="staff-card-name">
+          Fasalul Faseeh K
+        </div>
+        <div class="staff-card-position">
+          Position
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
 
-      <div class="container" style="margin-top: 20px" id="organiser">
-        <h2 class="section__title">Organisers</h2>
-        <div class="row" id="organisers">
-          <div class="column" data-aos="zoom-out" data-aos-delay="100">
-            <div class="team">
-              <div class="team-img">
-                <img src="assets/img/Mansoor Majeed.jpg" alt="Team Image" />
-              </div>
-              <div class="team-content">
-                <h2>Mansoor Majeed</h2>
-                <h3>Organizer</h3>
-                <div class="team-social">
-                  <a class="social-li" href="" target="_blank"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a class="social-in" href="" target="_blank"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a class="social-in" href="" target="_blank"
-                  ><i class="fa-brands fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>       
-        </div> 
-      </div>-->
-
-
-
-      
 <!--Organisers -->
-  
-  <section class="popular section" id="organiser" >
-    <span class="section__subtitle" style="margin-bottom: 100px;">Organisers</span>
+  <section class="popular section" id="organisers" >
+    <h2 class="section__title" style="margin-bottom: 100px;">Organisers</h2>
       <div class="overylay_team_wrap">
         <div class="container">
             <div class="row">
@@ -676,46 +648,24 @@
       </div>
   </section>
 
- <!--Staff coordinator-->
+
+<!--Sponsers-->
 <section>
-  <span class="section__subtitle" style="margin: 80px;">Staff Coordinators</span>
-  <div class="staff">
-    <div class="staff-card">
-      <div class="staff-card-top">
-        <div class="staff-card-image" style="margin-left: 20px; margin-top: 20px;">
-          <img src="assets/img/Amal M. R..jpeg" alt="">
-        </div>
-      </div>
-      <div class="staff-card-bottom">
-        <div class="staff-card-name">
-          Amal M R
-        </div>
-        <div class="staff-card-position">
-          Position
-        </div>
-      </div>
-    </div>
-      <div class="staff-card">
-      <div class="staff-card-top">
-        <div class="staff-card-image" style="margin-left: 20px; margin-top: 20px;">
-          <img src="assets/img/Fasalul Faseeh.jpg" alt="">
-        </div>
-      </div>
-      <div class="staff-card-bottom">
-        <div class="staff-card-name">
-          Fasalul Faseeh K
-        </div>
-        <div class="staff-card-position">
-          Position
-        </div>
-      </div>
-    </div>
-    
-    
+  <span class="section__subtitle"> </span>
+  <h2 class="section__title">Our Sponsor</h2>
+  <div class="sponser__container container grid">
+    <article class="sponser__card" >
+      <img
+        src="assets/img/2redbull.png"
+        alt="popular image"
+        class="sponser__img"
+      />
+      <h3 class="popular name">Redbull</h3>
+    </article>
   </div>
 </section>
-
 </main>
+
 
     <!--==================== FOOTER ====================-->
     <footer class="footer-section">
@@ -723,20 +673,18 @@
           <div class="footer-cta pt-5 pb-5" style="margin-left:0px;">
               <div class="row">
                   <div class="col-xl-4 col-md-4 mb-30">
-                      <div class="single-cta">
-                        
-                        <a href="#"><i class="fas fa-map-marker-alt" style="color: #455eb5;"></i></a>
+                      <div class="single-cta">                       
+                        <a href="https://www.google.com/maps/place/KMEA+Engineering+College/@10.0540224,76.3774048,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080bef5afc9553:0xa27dba956ef9e88!8m2!3d10.0540224!4d76.3795935?shorturl=1"><i class="fas fa-map-marker-alt" style="color: #455eb5;"></i></a>
                           <div class="cta-text">
                               <h4>Location</h4>
-                              <span>KMEA Engineering College</span>
-                          </div>
-                          
+                              <span>KMEA Engineering College</span>                            
+                          </div>                         
                       </div>
                       <br>
                   </div>
                   <div class="col-xl-4 col-md-4 mb-30">
                       <div class="single-cta">
-                        <a href="#"><i class="far fa-envelope-open" style="color: #455eb5;"></i></a>
+                        <a href="mailto:mail@dummy"><i class="far fa-envelope-open" style="color: #455eb5;"></i></a>
                           <div class="cta-text">
                               <h4>Contact us</h4>
                               <span>kmeahack23@gmail.com</span>
@@ -744,13 +692,12 @@
                       </div>
                       <br>
                   </div>
-
                   <div class="col-xl-4 col-md-4 mb-30" >
                     <div class="single-cta">
-                      <button class="button newsletter__button" >
-                        Register now<i class="ri-send-plane-line"></i>
-                      </button>
-                      
+                      <a href="https://web.whatsapp.com/"><button class="button newsletter__button" >
+                        <i class="fri-send-plane-line"></i>
+                        Register now
+                      </button></a>                      
                     </div>
                 </div>
               </div>
@@ -758,12 +705,12 @@
           <div class="footer-content pt-5 pb-5">
               <div class="row">
                   <div class="col-xl-4 col-lg-4 mb-50" style="margin-left: 0px;">
+                    <div class="footer-widget-heading">
+                      <h3 style="margin-top: 30px; margin-left: 30px;">Community Partner</h3>
+                  </div>
                       <div class="footer-widget">
                           <div class="footer-logo">
-                              <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
-                          </div>
-                          <div class="footer-text">
-                              <p>Hac'K 23,one among the highlight events of Kapricious '23. It's aim to promote innovative creations in young minds.CS Dept of KMEA is at the organizing head for this exciting 24hrs software based hackathon.</p>
+                              <a href="index.html"><img src="assets/img/tinker.png" class="img-fluid" alt="logo" style="margin-left: 15px;"></a>
                           </div>
                           <div class="footer-social-icon">
                           </div>
@@ -775,14 +722,12 @@
                               <h3 style="margin-top: 30px; margin-left: 30px;">Useful Links</h3>
                           </div>
                           <ul>
-                              <li><a href="#">About</a></li>
-                              <li><a href="#">Vertices</a></li>
-                              <li><a href="#">Timeline</a></li>
-                              <li><a href="#">Faq's</a></li>
-                              
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#vertices">Vertices</a></li>
+                              <li><a href="#timeline">Timeline</a></li>
+                              <li><a href="#faq">Faq's</a></li>                             
                       </div>
                   </div>
-
                   <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                       <div class="footer-widget">
                           <div class="footer-widget-heading">
@@ -793,14 +738,11 @@
                                 <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
                                 <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                                 <a href="#"><i class="fa-brands fa-youtube youtube-bg"></i></a>
-                              </div>
-                        
+                              </div>                        
                           </ul>
                       </div>
-                  </div>
-               
-
-              </div>
+                  </div>              
+               </div>
           </div>
       </div>
       <div class="copyright-area">
@@ -815,7 +757,7 @@
           </div>
       </div>
   </footer>
-    <!-- footer section end -->
+  <!-- footer section end -->
 
     <!--========== SCROLL UP ==========-->
     <a href="#" class="scrollup" id="scroll-up">
@@ -829,6 +771,8 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+   
 
     <!--Team Scroll-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -865,28 +809,23 @@
       });
     })(jQuery);
     </script>
-    	<script>
-        let aim = document.getElementById('image'), room, overflow;
-    
+
+
+    <script>
+    let aim = document.getElementById('image'), room, overflow;
     window.addEventListener('load', setEdge);
     window.addEventListener('resize', setEdge);
-    
     window.addEventListener('scroll', function() {
-    
       let ratio = (this.pageYOffset || this.scrollY)/overflow;
-    
       aim.style.setProperty('--epoch', ratio);
     });
-    
     function setEdge() {
-    
       room = window.innerHeight;
       overflow = document.body.scrollHeight-room;
-    
       aim.style.setProperty('--maximum', room-aim.height + 'px');
     }
-    
-    
-      </script>
+    </script>
+         
+
   </body>
 </html>
