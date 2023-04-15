@@ -409,7 +409,6 @@ img {
 .popular__card {
   position: relative;
   background: linear-gradient(to bottom, #000212, #0c0c23, #000212);
-  ;
   padding: 7rem 2rem 1.5rem;
   box-shadow: 0 8px 20px hsla(19, 64%, 48%, 0.08);
   border-radius: 1rem;
@@ -531,6 +530,7 @@ img {
   position: relative;
   align-items: center;
   justify-content: center;
+  
 
 }
 
@@ -542,12 +542,25 @@ img {
   text-align: center;
   overflow: hidden;
   margin-bottom: 1rem;
+  margin: 0 auto;
+  max-width: 800px;
 
 }
 
 .newsletter__img {
   width: 250px;
   top: -0.5rem;
+  margin-left: 130px;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .newsletter__img {
+    margin-left: 3rem;
+  }
+  .section__subtitle{
+    text-align:left;
+  }
 }
 
 .newsletter__data .section__title {
@@ -557,7 +570,13 @@ img {
   text-align: center;
   align-items: center;
   justify-content: center;
+}
 
+.newsletter__data{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 10px ;
 }
 
 .newsletter__form {
@@ -1949,6 +1968,10 @@ color: #878787;
     height: 140px;
     margin-left: 27%;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+
   }
 }
 
@@ -2073,7 +2096,8 @@ color: #878787;
   color: #fff;
   text-align: center;
   text-decoration: none;
-  background: #000212;
+  background: #340b6b
+  ;
   border-radius: 50%;
   -webkit-transform: translate3d(0, 30px, 0);
   transform: translate3d(0, 30px, 0);
@@ -2127,4 +2151,175 @@ color: #878787;
     margin: 45px;
 
   }
+
+}
+
+
+
+/*staff coordinators*/
+.staff{
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+margin-bottom: 50px;
+}
+.staff-card {
+position: relative;
+height: 190px;
+    width: 178px;
+border-radius: 15px;
+background: linear-gradient(to bottom, #000212, #0c0c23, #000212);
+transition: 0.3s ease-out;
+overflow: hidden;
+box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .staff-card {
+    height: 190px;
+    width: 190px;
+
+  }
+
+  .staff-card-top {
+    height: 190px;
+    width: 178px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    }
+
+    .staff-card-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 50%;
+      border-radius: 50%;
+      overflow: hidden;
+      margin:auto;
+      transition: 0.3s ease-out;
+      border: 7px solid transparent;
+
+    
+      } 
+      .staff-card-name {
+        font-family:--var(--subtitle-font);
+        font-size: 15px;
+        
+        }
+    
+}
+.staff-card:hover {
+height: 250px;
+background: linear-gradient(to bottom, #000212, #0c0c23, #000212);
+}
+.staff-card-top {
+height: 200px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.staff-card-image {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 70%;
+height: 70%;
+border-radius: 50%;
+overflow: hidden;
+margin: auto;
+transition: 0.3s ease-out;
+border: 7px solid transparent;
+}
+.staff-card:hover .team-card-image {
+border: 7px solid #f46873;
+}
+.staff-card-image img {
+transition: 0.3s ease-out;
+height: 110%; 
+width: 100%;
+
+/*if the image is rectangular use height: 100%;*/
+/*if the image is square replace height: 100%; by width: 100%;*/
+}
+.staff-card:hover img {
+height: 110%;
+}
+.staff-card-bottom {
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+width: 100%;
+height: 80px;
+background: linear-gradient(to bottom, #000212 #000212);
+position: absolute;
+bottom: -80px;
+opacity: 0;
+transition: 0.3s ease-out;
+}
+.staff-card:hover .staff-card-bottom {
+bottom: 0;
+opacity: 1;
+}
+.staff-card-name {
+font-family:--var(--subtitle-font);
+font-size: 20px;
+margin-bottom: 5px;
+}
+.staff-card-position {
+font-family:--var(--subtitle-font);
+font-size: 10px;
+color: #ffffff;
+}
+
+
+
+/*redbull*/
+
+body {
+  height: 700vh;
+}
+
+@media only screen and (max-width: 767px) {
+  .image{
+   
+  }
+}
+
+#image {
+left:80%;
+position: fixed;
+animation-duration: 1s;
+animation-timing-function: linear;
+animation-play-state: paused;
+animation-iteration-count: 1;
+animation-fill-mode: both;
+animation-name: move;
+animation-delay: calc(var(--epoch) * -1s);
+}
+
+
+
+@-webkit-keyframes move {
+
+0% {
+ transform: translateY(0);
+}
+100% {
+ transform: translateY(var(--maximum));
+}
+}
+
+@keyframes move {
+
+0% {
+ transform: translateY(0);
+}
+100% {
+ transform: translateY(var(--maximum));
+}
 }
