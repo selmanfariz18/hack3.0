@@ -947,13 +947,7 @@ img {
     bottom: 15rem;
   }
 
-  .footer__leaf {
-    right: 0;
-    left: 0;
-    bottom: -15rem;
-    margin: 0 auto;
-    width: 150px;
-  }
+
 
   .newsletter__img {
     width: 250px;
@@ -1203,7 +1197,7 @@ time {
 
 .faq.active {
   background-color: #0a192f9c;
-  box-shadow: 10px 10px 300px #d215eb, 0px 0px 100px #340b6b,
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .faq.active::before,
@@ -1387,29 +1381,35 @@ img {
 }
 
 .single-cta i {
-  color: white;
   font-size: 30px;
   float: left;
   margin-top: 8px;
 }
 
+.single-cta a:hover i, 
+  .single-cta a:focus i {
+    color: red;
+  }
 
+  .single-cta:hover i {
+    color: red;
+  }
 .cta-text {
   padding-left: 15px;
   display: inline-block;
+  color: rgb(255, 255, 255);
 }
 
 .cta-text h4 {
-  color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
 
 .cta-text span {
-  color: #757575;
   font-size: 15px;
 }
+
 
 .footer-content {
   position: relative;
@@ -1455,12 +1455,23 @@ img {
   margin-right: 15px;
 }
 
+.footer-widget ul li a:hover {
+  color: #ffd54f;
+}
+
+@media only screen and (max-width: 767px) {
+  .single-cta{
+    margin-left: 20px;
+  }
+}
+
 .footer-social-icon i {
   height: 40px;
   width: 40px;
   text-align: center;
   line-height: 38px;
   border-radius: 50%;
+  transition: all 0.3s ease;
 }
 
 .instagram-bg,
@@ -1853,13 +1864,14 @@ img {
     overflow: hidden;
     width: 140px;
     height: 140px;
-    margin-left: 27%;
+    margin-left:20%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 
   }
+
 }
 
 .overylay_team_wrap .teamoverly_wrap .teamoverly_img {
@@ -2177,47 +2189,7 @@ img {
 
 
 
-/*redbull*/
 
-body {
-  height: 700vh;
-}
-
-#image {
-  left: 80%;
-  position: fixed;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-play-state: paused;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-  animation-name: move;
-  animation-delay: calc(var(--epoch) * -1s);
-}
-
-
-
-@-webkit-keyframes move {
-
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(var(--maximum));
-  }
-}
-
-@keyframes move {
-
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(var(--maximum));
-  }
-}
 
 #preloader {
   position: fixed;
