@@ -1789,7 +1789,7 @@ img {
   user-select: none;
   cursor: pointer;
   box-shadow: 0px 3.89851px 30px rgba(32, 31, 31, 0.17), 0px 11.1386px 71.2871px rgba(7, 12, 67, 0.7);
- background: #340b6b;
+ background: #25054e;
  border-radius: 30px;
  font-weight: bolder;
 
@@ -1797,15 +1797,23 @@ img {
 
 .prizehead{
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight:90px;
     font-family:"Space Grotesk", sans-serif;
     font-size: xx-large;
 
 }
+.prizeamt{
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px #0c0c23;
+}
 .prizedes{
   color: white;
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 20px;
   font-weight:30px;
   font-family:"Space Grotesk", sans-serif;
 
