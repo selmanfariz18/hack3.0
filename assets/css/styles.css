@@ -1770,14 +1770,15 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 515px;
+  min-height: 600px;
   perspective: 1000px;
   overflow: hidden;
+  
 }
 
 .testimonials .item {
   width: 300px;
-  padding: 30px;
+  padding:30px;
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -1787,32 +1788,27 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   user-select: none;
   cursor: pointer;
-}
+  box-shadow: 0px 3.89851px 30px rgba(32, 31, 31, 0.17), 0px 11.1386px 71.2871px rgba(7, 12, 67, 0.7);
+ background: #340b6b;
+ border-radius: 30px;
+ font-weight: bolder;
 
-.testimonials .item  {
-  font-size: 40px;
-  color: rgb(0, 0, 0);
-  font-family:"Space Grotesk", sans-serif;
-  font-weight: bolder;
-  margin-top: 50px;
- 
 }
 
 .prizehead{
-    background-clip: text;
-    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
-    color: var(--color-background);
-    font-size: var(--font-size);
-    font-weight: var(--font-weight);
-    letter-spacing: var(--letter-spacing);
-    padding: calc(--stroke-width / 2);
-    -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: var(--stroke-width);
+    color: white;
+    margin-top: 20px;
+    font-weight:90px;
+    font-family:"Space Grotesk", sans-serif;
+    font-size: xx-large;
 
 }
+.prizedes{
+  color: white;
+  margin-top: 20px;
+  font-weight:30px;
+  font-family:"Space Grotesk", sans-serif;
 
-.prizeamt{
-  color: #2ecc71;
 }
 
 .dots {
@@ -1851,7 +1847,7 @@ img {
 #t-3:checked~.testimonials label[for="t-1"] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
-  opacity: 0.5;
+  filter: blur(9px);
 }
 
 #t-2:checked~.testimonials label[for="t-1"],
@@ -1859,7 +1855,7 @@ img {
 #t-1:checked~.testimonials label[for="t-3"] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
-  opacity: 0.5;
+  filter: blur(9px);
 }
 
 #t-1:checked~.testimonials label[for="t-1"],
@@ -2374,29 +2370,3 @@ img {
   }
 }
 
-
-
-.animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #ffff 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-}
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
