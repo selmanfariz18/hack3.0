@@ -387,14 +387,7 @@ img {
   justify-self: center;
 }
 
-.about__leaf {
-  width: 100px;
-  opacity: 0.2;
-  position: absolute;
-  right: -1.5rem;
-  bottom: 11rem;
-  transform: rotate(-15deg);
-}
+
 
 /*=============== POPULAR ===============*/
 .popular__container {
@@ -552,15 +545,20 @@ img {
 
 }
 
+
 @media only screen and (max-width: 767px) {
   .newsletter__img {
-    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* centers the container horizontally */
   }
-
+  
   .section__subtitle {
     text-align: left;
   }
 }
+
 
 .newsletter__data .section__title {
   color: white;
@@ -987,7 +985,7 @@ img {
 }
 
 .timeline ul {
-  padding: 50px 0;
+  padding: 50px 30px;
   align-items: center;
   text-align: center;
 }
@@ -1194,7 +1192,7 @@ time {
 }
 
 .faq {
-  margin: 20px 0;
+  margin: 20px 20px;
   border: 1px solid #ffffff;
   border-radius: 20px;
   padding: 30px;
@@ -1205,7 +1203,7 @@ time {
 
 .faq.active {
   background-color: #0a192f9c;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 300px #d215eb, 0px 0px 100px #340b6b,
 }
 
 .faq.active::before,
@@ -1230,7 +1228,6 @@ time {
 
 .faq-title {
   margin: 0 35px 0 0;
-
   font-family: "Clash Display";
   font-style: normal;
   font-weight: 500;
