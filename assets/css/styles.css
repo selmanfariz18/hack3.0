@@ -269,11 +269,13 @@ img {
 /*=============== HOME ===============*/
 .home {
   position: relative;
+  margin-top: 0;
 }
 
 .home__container {
   row-gap: 3rem;
   padding-top: 2rem;
+  
 }
 
 .home__img {
@@ -1787,9 +1789,30 @@ img {
   cursor: pointer;
 }
 
-.testimonials .item h1 {
-  font-size: 114px;
-  color: white;
+.testimonials .item  {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family:"Space Grotesk", sans-serif;
+  font-weight: bolder;
+  margin-top: 50px;
+ 
+}
+
+.prizehead{
+    background-clip: text;
+    background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+    color: var(--color-background);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    letter-spacing: var(--letter-spacing);
+    padding: calc(--stroke-width / 2);
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: var(--stroke-width);
+
+}
+
+.prizeamt{
+  color: #2ecc71;
 }
 
 .dots {
@@ -2346,5 +2369,32 @@ img {
     font-size: 10px;
     color: #e4e4e4;
     margin: 4px;
+  }
+}
+
+
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #ffff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
 }
