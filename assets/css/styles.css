@@ -115,13 +115,25 @@ img {
 }
 
 .section__title {
-  font-size: var(--h1-font-size);
+  font-size:90px;
   margin-bottom: 5.5rem;
   margin-top: 5.5rem;
   color: white;
   text-align: center;
   font-weight: bold;
-  font-family: var(--title-font);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@media only screen and (max-width: 767px){
+  .section__title {
+    font-size:50px;
+    margin-bottom: 5.5rem;
+    margin-top: 5.5rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--title-font);
+  }
 }
 
 .section__subtitle {
