@@ -1845,6 +1845,7 @@ img {
   background-color: #413b52;
   margin: 7px;
   transition-duration: 0.2s;
+  
 }
 
 #t-1:checked~.dots label[for="t-1"],
