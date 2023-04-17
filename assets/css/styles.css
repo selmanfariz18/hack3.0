@@ -1782,7 +1782,7 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 700px;
+  min-height: 500px;
   perspective: 1000px;
   overflow: hidden;
 
@@ -1822,6 +1822,27 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px #0c0c23;
 }
+
+.prizeamt_team{
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px #0c0c23;
+}
+
+@media only screen and (max-width: 767px){
+
+  .prizeamt_team{
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px #0c0c23;
+  }
+}
+
+
 .prizedes{
   color: white;
   margin-top: 10px;
@@ -1835,6 +1856,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+}
+
+@media only screen and (max-width: 767px){
+  .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 .dots label {
@@ -1845,7 +1876,7 @@ img {
   background-color: #413b52;
   margin: 7px;
   transition-duration: 0.2s;
-  
+
 }
 
 #t-1:checked~.dots label[for="t-1"],
