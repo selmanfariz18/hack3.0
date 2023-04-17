@@ -43,27 +43,38 @@
     <link rel="stylesheet" href="assets/css/sponser.css"/>
     <title>Hac'K_23</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      (function ($) {
-        "use strict";
-  
-        /*---------------------------------------------------- */
-        /* Preloader
-  ------------------------------------------------------ */
-        $(window).on("load", function () {
-          // will first fade out the loading animation
-          $("#loader").fadeOut("slow", function () {
-            // will fade out the whole DIV that covers the website.
-            $("#preloader").delay(300).fadeOut("slow");
-          });
-        });
-      })(jQuery);
-      </script>
+
+<style>
+    .loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-container img {
+  width: 186px;
+  height: 140px;
+}
+
+body.loaded .loader-container {
+  display: none;
+}
+</style>
+
   </head>
   <body>
     <!--==================== HEADER ====================-->
 
-
+    <div class="loader-container">
+        <img src="loader.gif" alt="Loading...">
+      </div>
     <header class="header" id="header">
       <nav class="nav container">
         <a href="" class="nav__logo">
@@ -120,10 +131,7 @@
       class="main"
     > 
       <!--==================== HOME ====================-->
-<!--preloader div-->
-<div id="preloader"> 
-  <div id="loader"></div>
-</div>
+
 
 
       <section class="home section" id="home" style="background-image: linear-gradient(#0c1038b2, #000212);">
@@ -887,6 +895,11 @@
       $(this).css("color", "#455eb5");
     });
   });
+</script>
+<script>
+      setTimeout(function() {
+    document.body.classList.add('loaded');
+  }, 3000);
 </script>
   </body>
 </html>
