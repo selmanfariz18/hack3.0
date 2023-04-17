@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=JetBrains+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
-
+@import url(//db.onlinewebfonts.com/c/86f80c2b3e0f3f67d24a4176f769ea0e?family=Stravinsky);
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -1801,7 +1801,7 @@ img {
   user-select: none;
   cursor: pointer;
   box-shadow: 0px 3.89851px 30px rgba(32, 31, 31, 0.17), 0px 11.1386px 71.2871px rgba(7, 12, 67, 0.7);
- background: #25054e;
+ background: #27272A;
  border-radius: 30px;
  font-weight: bolder;
 
@@ -1819,7 +1819,9 @@ img {
   margin-top: 10px;
   font-size: 60px;
   font-weight: 50px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica"; 
+  src: url("//db.onlinewebfonts.com/t/86f80c2b3e0f3f67d24a4176f769ea0e.eot");
+  /*font-family: Arial, Helvetica, sans-serif;*/
   text-shadow: 2px 2px #0c0c23;
 }
 
