@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=JetBrains+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
-@import url(//db.onlinewebfonts.com/c/86f80c2b3e0f3f67d24a4176f769ea0e?family=Stravinsky);
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -1773,6 +1772,12 @@ img {
   width: 100%;
 }
 
+.slider_image{
+  width: 150px;
+   height: 150px;
+   margin: 30px;
+}
+
 .slider input {
   display: none;
 }
@@ -1782,7 +1787,7 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 500px;
+  min-height: 600px;
   perspective: 1000px;
   overflow: hidden;
 
@@ -1800,11 +1805,12 @@ img {
   user-select: none;
   cursor: pointer;
   box-shadow: 0px 3.89851px 30px rgba(32, 31, 31, 0.17), 0px 11.1386px 71.2871px rgba(7, 12, 67, 0.7);
- background: #340b6b;
- border-radius: 30px;
+ background: #0c0c23;
+ background: linear-gradient(to bottom, #000212, #000000, #000212);
  font-weight: bolder;
  margin-top: 40px;
 border: 1px solid white;
+border-radius: 30px;
 }
 
 .prizehead{
@@ -1849,8 +1855,8 @@ border: 1px solid white;
   color: white;
   margin-top: 10px;
   font-size: 20px;
-  font-weight:30px;
-  font-family:"Space Grotesk", sans-serif;
+  font-family:"Roboto";
+  padding: 20px;
 
 }
 
@@ -1901,7 +1907,7 @@ border: 1px solid white;
 #t-3:checked~.testimonials label[for="t-1"] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
-  filter: blur(2px);
+  filter: blur(5px);
 }
 
 #t-2:checked~.testimonials label[for="t-1"],
@@ -1909,7 +1915,7 @@ border: 1px solid white;
 #t-1:checked~.testimonials label[for="t-3"] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
-  filter: blur(2px);
+  filter: blur(5px);
 }
 
 #t-1:checked~.testimonials label[for="t-1"],
