@@ -160,9 +160,9 @@ img {
   width: 100%;
   top: -1;
   left: 0;
+  margin-bottom: 0px;
   z-index: var(--z-fixed);
   background: linear-gradient(to bottom, #000212, #0c0c23, rgba(21, 28, 102, 0.7));
-
   border: blur(4px);
   box-shadow: 0px 3.89851px 30px rgba(0, 0, 0, 0.17),
     0px 11.1386px 71.2871px rgba(30, 40, 146, 0.7);
@@ -1797,14 +1797,14 @@ img {
   box-sizing: border-box;
   text-align: center;
   transition: transform 0.4s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   user-select: none;
   cursor: pointer;
   box-shadow: 0px 3.89851px 30px rgba(32, 31, 31, 0.17), 0px 11.1386px 71.2871px rgba(7, 12, 67, 0.7);
- background: #27272A;
+ background: #340b6b;
  border-radius: 30px;
  font-weight: bolder;
-
+ margin-top: 40px;
+border: 1px solid white;
 }
 
 .prizehead{
