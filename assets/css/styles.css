@@ -1782,15 +1782,15 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 600px;
+  min-height: 700px;
   perspective: 1000px;
   overflow: hidden;
-  
+
 }
 
 .testimonials .item {
   width: 300px;
-  padding:30px;
+  padding:5px;
   border-radius: 5px;
   position: absolute;
   top: 0;
@@ -1867,7 +1867,7 @@ img {
 #t-3:checked~.testimonials label[for="t-1"] {
   transform: translate3d(300px, 0, -90px) rotateY(-15deg);
   z-index: 3;
-  filter: blur(9px);
+  filter: blur(2px);
 }
 
 #t-2:checked~.testimonials label[for="t-1"],
@@ -1875,7 +1875,7 @@ img {
 #t-1:checked~.testimonials label[for="t-3"] {
   transform: translate3d(-300px, 0, -90px) rotateY(15deg);
   z-index: 3;
-  filter: blur(9px);
+  filter: blur(2px);
 }
 
 #t-1:checked~.testimonials label[for="t-1"],
