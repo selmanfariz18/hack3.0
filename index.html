@@ -127,6 +127,9 @@
           <div class="countdown-label">Seconds</div>
         </div>
       </div>
+
+
+
       <!--==================== ABOUT ====================-->
       
       <br><br><br>
@@ -150,6 +153,24 @@
           </div>
         </div>
       </section>
+
+      <script>
+        (function ($) {
+          "use strict";
+    
+          /*---------------------------------------------------- */
+          /* Preloader
+    ------------------------------------------------------ */
+          $(window).on("load", function () {
+            // will first fade out the loading animation
+            $("#loader").fadeOut("slow", function () {
+              // will fade out the whole DIV that covers the website.
+              $("#preloader").delay(300).fadeOut("slow");
+            });
+          });
+        })(jQuery);
+        </script>
+
       <!--==================== VERTICES ====================-->
       <section class="popular section" id="domains">
         <h2 class="section__title">Our Domains</h2>
@@ -191,6 +212,8 @@
           </article>
         </div>
       </section>
+
+
 
       <!--Prizes-->
       <section id="prizes">
@@ -811,22 +834,7 @@
       });
     </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script>
-    (function ($) {
-      "use strict";
 
-      /*---------------------------------------------------- */
-      /* Preloader
------------------------------------------------------- */
-      $(window).on("load", function () {
-        // will first fade out the loading animation
-        $("#loader").fadeOut("slow", function () {
-          // will fade out the whole DIV that covers the website.
-          $("#preloader").delay(300).fadeOut("slow");
-        });
-      });
-    })(jQuery);
-    </script>
 
 
     <script>
