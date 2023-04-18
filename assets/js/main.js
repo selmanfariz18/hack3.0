@@ -160,10 +160,27 @@ sr.reveal(`.about__data, recently__data`, { origin: "left" });
 sr.reveal(`.about__img, recently__img`, { origin: "right" });
 sr.reveal(`.popular__card`, { interval: 115 });
 
+/*faq button*/
 
 const toggles = document.querySelectorAll('.faq-toggle');
 
 toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active');
+    });
+});
+
+const toggless = document.querySelectorAll('.faq-title');
+
+toggless.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+        toggle.parentNode.classList.toggle('active');
+    });
+});
+
+const togglesss = document.querySelectorAll('.faq-text');
+
+togglesss.forEach(toggle => {
     toggle.addEventListener('click', () => {
         toggle.parentNode.classList.toggle('active');
     });
